@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+from watson.framework import controllers
+
+class ${1:Controller}(controllers.${2:Type}):
+    def ${3:Action}(self):
+        pass
+]]></content>
+    <tabTrigger>controller</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+from watson.console import command, ConsoleError
+from watson.console.decorators import arg
+from watson.di import ContainerAware
+
+
+class ${1:Name}(command.Base, ContainerAware):
+    """${3:Description}
+    """
+    name = '${2:CLI Name}'
+
+    @arg()
+    def ${5:Arg Word}(self):
+        """${7:Help String}
+        """
+]]></content>
+    <tabTrigger>command</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
